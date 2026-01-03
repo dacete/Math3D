@@ -202,7 +202,7 @@
 #>
     [StructLayout(LayoutKind.Sequential, Pack=4)]
     [DataContract]
-    public readonly partial struct <#= name #> 
+    public partial struct <#= name #>
         : IEquatable< <#= name #> >
 <#+
     if (isVector || isInterval)
@@ -217,7 +217,7 @@
         for (var i=0; i < fields.Length; ++i) {
 #>
         [DataMember]
-        public readonly <#= types[i] #> <#= fields[i] #>;
+        public <#= types[i] #> <#= fields[i] #>;
 <#+
         }
 #>

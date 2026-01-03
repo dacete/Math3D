@@ -10,14 +10,14 @@ namespace Vim.Math3d
 {
     [StructLayout(LayoutKind.Sequential, Pack=4)]
     [DataContract]
-    public readonly partial struct Vector2 
+    public partial struct Vector2
         : IEquatable< Vector2 >
         , IComparable< Vector2 >
     {
         [DataMember]
-        public readonly float X;
+        public float X;
         [DataMember]
-        public readonly float Y;
+        public float Y;
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public Vector2((float x, float y) tuple) : this(tuple.x, tuple.y) { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public Vector2(float x, float y) { X = x; Y = y; }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public static Vector2 Create(float x, float y) => new Vector2(x, y);
@@ -79,16 +79,16 @@ namespace Vim.Math3d
     }
     [StructLayout(LayoutKind.Sequential, Pack=4)]
     [DataContract]
-    public readonly partial struct Vector3 
+    public partial struct Vector3
         : IEquatable< Vector3 >
         , IComparable< Vector3 >
     {
         [DataMember]
-        public readonly float X;
+        public float X;
         [DataMember]
-        public readonly float Y;
+        public float Y;
         [DataMember]
-        public readonly float Z;
+        public float Z;
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public Vector3((float x, float y, float z) tuple) : this(tuple.x, tuple.y, tuple.z) { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public Vector3(float x, float y, float z) { X = x; Y = y; Z = z; }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public static Vector3 Create(float x, float y, float z) => new Vector3(x, y, z);
@@ -152,18 +152,18 @@ namespace Vim.Math3d
     }
     [StructLayout(LayoutKind.Sequential, Pack=4)]
     [DataContract]
-    public readonly partial struct Vector4 
+    public partial struct Vector4
         : IEquatable< Vector4 >
         , IComparable< Vector4 >
     {
         [DataMember]
-        public readonly float X;
+        public float X;
         [DataMember]
-        public readonly float Y;
+        public float Y;
         [DataMember]
-        public readonly float Z;
+        public float Z;
         [DataMember]
-        public readonly float W;
+        public float W;
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public Vector4((float x, float y, float z, float w) tuple) : this(tuple.x, tuple.y, tuple.z, tuple.w) { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public Vector4(float x, float y, float z, float w) { X = x; Y = y; Z = z; W = w; }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public static Vector4 Create(float x, float y, float z, float w) => new Vector4(x, y, z, w);
@@ -229,14 +229,14 @@ namespace Vim.Math3d
     }
     [StructLayout(LayoutKind.Sequential, Pack=4)]
     [DataContract]
-    public readonly partial struct DVector2 
+    public partial struct DVector2
         : IEquatable< DVector2 >
         , IComparable< DVector2 >
     {
         [DataMember]
-        public readonly double X;
+        public double X;
         [DataMember]
-        public readonly double Y;
+        public double Y;
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public DVector2((double x, double y) tuple) : this(tuple.x, tuple.y) { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public DVector2(double x, double y) { X = x; Y = y; }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public static DVector2 Create(double x, double y) => new DVector2(x, y);
@@ -298,16 +298,16 @@ namespace Vim.Math3d
     }
     [StructLayout(LayoutKind.Sequential, Pack=4)]
     [DataContract]
-    public readonly partial struct DVector3 
+    public partial struct DVector3
         : IEquatable< DVector3 >
         , IComparable< DVector3 >
     {
         [DataMember]
-        public readonly double X;
+        public double X;
         [DataMember]
-        public readonly double Y;
+        public double Y;
         [DataMember]
-        public readonly double Z;
+        public double Z;
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public DVector3((double x, double y, double z) tuple) : this(tuple.x, tuple.y, tuple.z) { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public DVector3(double x, double y, double z) { X = x; Y = y; Z = z; }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public static DVector3 Create(double x, double y, double z) => new DVector3(x, y, z);
@@ -371,18 +371,18 @@ namespace Vim.Math3d
     }
     [StructLayout(LayoutKind.Sequential, Pack=4)]
     [DataContract]
-    public readonly partial struct DVector4 
+    public partial struct DVector4
         : IEquatable< DVector4 >
         , IComparable< DVector4 >
     {
         [DataMember]
-        public readonly double X;
+        public double X;
         [DataMember]
-        public readonly double Y;
+        public double Y;
         [DataMember]
-        public readonly double Z;
+        public double Z;
         [DataMember]
-        public readonly double W;
+        public double W;
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public DVector4((double x, double y, double z, double w) tuple) : this(tuple.x, tuple.y, tuple.z, tuple.w) { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public DVector4(double x, double y, double z, double w) { X = x; Y = y; Z = z; W = w; }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public static DVector4 Create(double x, double y, double z, double w) => new DVector4(x, y, z, w);
@@ -448,14 +448,14 @@ namespace Vim.Math3d
     }
     [StructLayout(LayoutKind.Sequential, Pack=4)]
     [DataContract]
-    public readonly partial struct Complex 
+    public partial struct Complex
         : IEquatable< Complex >
         , IComparable< Complex >
     {
         [DataMember]
-        public readonly double Real;
+        public double Real;
         [DataMember]
-        public readonly double Imaginary;
+        public double Imaginary;
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public Complex((double real, double imaginary) tuple) : this(tuple.real, tuple.imaginary) { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public Complex(double real, double imaginary) { Real = real; Imaginary = imaginary; }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public static Complex Create(double real, double imaginary) => new Complex(real, imaginary);
@@ -517,13 +517,13 @@ namespace Vim.Math3d
     }
     [StructLayout(LayoutKind.Sequential, Pack=4)]
     [DataContract]
-    public readonly partial struct Plane 
+    public partial struct Plane
         : IEquatable< Plane >
     {
         [DataMember]
-        public readonly Vector3 Normal;
+        public Vector3 Normal;
         [DataMember]
-        public readonly float D;
+        public float D;
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public Plane((Vector3 normal, float d) tuple) : this(tuple.normal, tuple.d) { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public Plane(Vector3 normal, float d) { Normal = normal; D = d; }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public static Plane Create(Vector3 normal, float d) => new Plane(normal, d);
@@ -547,13 +547,13 @@ namespace Vim.Math3d
     }
     [StructLayout(LayoutKind.Sequential, Pack=4)]
     [DataContract]
-    public readonly partial struct DPlane 
+    public partial struct DPlane
         : IEquatable< DPlane >
     {
         [DataMember]
-        public readonly DVector3 Normal;
+        public DVector3 Normal;
         [DataMember]
-        public readonly double D;
+        public double D;
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public DPlane((DVector3 normal, double d) tuple) : this(tuple.normal, tuple.d) { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public DPlane(DVector3 normal, double d) { Normal = normal; D = d; }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public static DPlane Create(DVector3 normal, double d) => new DPlane(normal, d);
@@ -577,17 +577,17 @@ namespace Vim.Math3d
     }
     [StructLayout(LayoutKind.Sequential, Pack=4)]
     [DataContract]
-    public readonly partial struct Quaternion 
+    public partial struct Quaternion
         : IEquatable< Quaternion >
     {
         [DataMember]
-        public readonly float X;
+        public float X;
         [DataMember]
-        public readonly float Y;
+        public float Y;
         [DataMember]
-        public readonly float Z;
+        public float Z;
         [DataMember]
-        public readonly float W;
+        public float W;
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public Quaternion((float x, float y, float z, float w) tuple) : this(tuple.x, tuple.y, tuple.z, tuple.w) { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public Quaternion(float x, float y, float z, float w) { X = x; Y = y; Z = z; W = w; }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public static Quaternion Create(float x, float y, float z, float w) => new Quaternion(x, y, z, w);
@@ -613,17 +613,17 @@ namespace Vim.Math3d
     }
     [StructLayout(LayoutKind.Sequential, Pack=4)]
     [DataContract]
-    public readonly partial struct DQuaternion 
+    public partial struct DQuaternion
         : IEquatable< DQuaternion >
     {
         [DataMember]
-        public readonly double X;
+        public double X;
         [DataMember]
-        public readonly double Y;
+        public double Y;
         [DataMember]
-        public readonly double Z;
+        public double Z;
         [DataMember]
-        public readonly double W;
+        public double W;
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public DQuaternion((double x, double y, double z, double w) tuple) : this(tuple.x, tuple.y, tuple.z, tuple.w) { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public DQuaternion(double x, double y, double z, double w) { X = x; Y = y; Z = z; W = w; }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public static DQuaternion Create(double x, double y, double z, double w) => new DQuaternion(x, y, z, w);
@@ -649,14 +649,14 @@ namespace Vim.Math3d
     }
     [StructLayout(LayoutKind.Sequential, Pack=4)]
     [DataContract]
-    public readonly partial struct Interval 
+    public partial struct Interval
         : IEquatable< Interval >
         , IComparable< Interval >
     {
         [DataMember]
-        public readonly float Min;
+        public float Min;
         [DataMember]
-        public readonly float Max;
+        public float Max;
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public Interval((float min, float max) tuple) : this(tuple.min, tuple.max) { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public Interval(float min, float max) { Min = min; Max = max; }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public static Interval Create(float min, float max) => new Interval(min, max);
@@ -698,14 +698,14 @@ namespace Vim.Math3d
     }
     [StructLayout(LayoutKind.Sequential, Pack=4)]
     [DataContract]
-    public readonly partial struct AABox2D 
+    public partial struct AABox2D
         : IEquatable< AABox2D >
         , IComparable< AABox2D >
     {
         [DataMember]
-        public readonly Vector2 Min;
+        public Vector2 Min;
         [DataMember]
-        public readonly Vector2 Max;
+        public Vector2 Max;
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public AABox2D((Vector2 min, Vector2 max) tuple) : this(tuple.min, tuple.max) { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public AABox2D(Vector2 min, Vector2 max) { Min = min; Max = max; }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public static AABox2D Create(Vector2 min, Vector2 max) => new AABox2D(min, max);
@@ -747,14 +747,14 @@ namespace Vim.Math3d
     }
     [StructLayout(LayoutKind.Sequential, Pack=4)]
     [DataContract]
-    public readonly partial struct AABox 
+    public partial struct AABox
         : IEquatable< AABox >
         , IComparable< AABox >
     {
         [DataMember]
-        public readonly Vector3 Min;
+        public Vector3 Min;
         [DataMember]
-        public readonly Vector3 Max;
+        public Vector3 Max;
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public AABox((Vector3 min, Vector3 max) tuple) : this(tuple.min, tuple.max) { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public AABox(Vector3 min, Vector3 max) { Min = min; Max = max; }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public static AABox Create(Vector3 min, Vector3 max) => new AABox(min, max);
@@ -796,14 +796,14 @@ namespace Vim.Math3d
     }
     [StructLayout(LayoutKind.Sequential, Pack=4)]
     [DataContract]
-    public readonly partial struct AABox4D 
+    public partial struct AABox4D
         : IEquatable< AABox4D >
         , IComparable< AABox4D >
     {
         [DataMember]
-        public readonly Vector4 Min;
+        public Vector4 Min;
         [DataMember]
-        public readonly Vector4 Max;
+        public Vector4 Max;
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public AABox4D((Vector4 min, Vector4 max) tuple) : this(tuple.min, tuple.max) { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public AABox4D(Vector4 min, Vector4 max) { Min = min; Max = max; }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public static AABox4D Create(Vector4 min, Vector4 max) => new AABox4D(min, max);
@@ -845,14 +845,14 @@ namespace Vim.Math3d
     }
     [StructLayout(LayoutKind.Sequential, Pack=4)]
     [DataContract]
-    public readonly partial struct DInterval 
+    public partial struct DInterval
         : IEquatable< DInterval >
         , IComparable< DInterval >
     {
         [DataMember]
-        public readonly double Min;
+        public double Min;
         [DataMember]
-        public readonly double Max;
+        public double Max;
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public DInterval((double min, double max) tuple) : this(tuple.min, tuple.max) { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public DInterval(double min, double max) { Min = min; Max = max; }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public static DInterval Create(double min, double max) => new DInterval(min, max);
@@ -894,14 +894,14 @@ namespace Vim.Math3d
     }
     [StructLayout(LayoutKind.Sequential, Pack=4)]
     [DataContract]
-    public readonly partial struct DAABox2D 
+    public partial struct DAABox2D
         : IEquatable< DAABox2D >
         , IComparable< DAABox2D >
     {
         [DataMember]
-        public readonly DVector2 Min;
+        public DVector2 Min;
         [DataMember]
-        public readonly DVector2 Max;
+        public DVector2 Max;
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public DAABox2D((DVector2 min, DVector2 max) tuple) : this(tuple.min, tuple.max) { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public DAABox2D(DVector2 min, DVector2 max) { Min = min; Max = max; }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public static DAABox2D Create(DVector2 min, DVector2 max) => new DAABox2D(min, max);
@@ -943,14 +943,14 @@ namespace Vim.Math3d
     }
     [StructLayout(LayoutKind.Sequential, Pack=4)]
     [DataContract]
-    public readonly partial struct DAABox 
+    public partial struct DAABox
         : IEquatable< DAABox >
         , IComparable< DAABox >
     {
         [DataMember]
-        public readonly DVector3 Min;
+        public DVector3 Min;
         [DataMember]
-        public readonly DVector3 Max;
+        public DVector3 Max;
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public DAABox((DVector3 min, DVector3 max) tuple) : this(tuple.min, tuple.max) { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public DAABox(DVector3 min, DVector3 max) { Min = min; Max = max; }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public static DAABox Create(DVector3 min, DVector3 max) => new DAABox(min, max);
@@ -992,14 +992,14 @@ namespace Vim.Math3d
     }
     [StructLayout(LayoutKind.Sequential, Pack=4)]
     [DataContract]
-    public readonly partial struct DAABox4D 
+    public partial struct DAABox4D
         : IEquatable< DAABox4D >
         , IComparable< DAABox4D >
     {
         [DataMember]
-        public readonly DVector4 Min;
+        public DVector4 Min;
         [DataMember]
-        public readonly DVector4 Max;
+        public DVector4 Max;
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public DAABox4D((DVector4 min, DVector4 max) tuple) : this(tuple.min, tuple.max) { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public DAABox4D(DVector4 min, DVector4 max) { Min = min; Max = max; }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public static DAABox4D Create(DVector4 min, DVector4 max) => new DAABox4D(min, max);
@@ -1041,13 +1041,13 @@ namespace Vim.Math3d
     }
     [StructLayout(LayoutKind.Sequential, Pack=4)]
     [DataContract]
-    public readonly partial struct Ray 
+    public partial struct Ray
         : IEquatable< Ray >
     {
         [DataMember]
-        public readonly Vector3 Position;
+        public Vector3 Position;
         [DataMember]
-        public readonly Vector3 Direction;
+        public Vector3 Direction;
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public Ray((Vector3 position, Vector3 direction) tuple) : this(tuple.position, tuple.direction) { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public Ray(Vector3 position, Vector3 direction) { Position = position; Direction = direction; }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public static Ray Create(Vector3 position, Vector3 direction) => new Ray(position, direction);
@@ -1071,13 +1071,13 @@ namespace Vim.Math3d
     }
     [StructLayout(LayoutKind.Sequential, Pack=4)]
     [DataContract]
-    public readonly partial struct DRay 
+    public partial struct DRay
         : IEquatable< DRay >
     {
         [DataMember]
-        public readonly DVector3 Position;
+        public DVector3 Position;
         [DataMember]
-        public readonly DVector3 Direction;
+        public DVector3 Direction;
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public DRay((DVector3 position, DVector3 direction) tuple) : this(tuple.position, tuple.direction) { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public DRay(DVector3 position, DVector3 direction) { Position = position; Direction = direction; }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public static DRay Create(DVector3 position, DVector3 direction) => new DRay(position, direction);
@@ -1101,13 +1101,13 @@ namespace Vim.Math3d
     }
     [StructLayout(LayoutKind.Sequential, Pack=4)]
     [DataContract]
-    public readonly partial struct Sphere 
+    public partial struct Sphere
         : IEquatable< Sphere >
     {
         [DataMember]
-        public readonly Vector3 Center;
+        public Vector3 Center;
         [DataMember]
-        public readonly float Radius;
+        public float Radius;
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public Sphere((Vector3 center, float radius) tuple) : this(tuple.center, tuple.radius) { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public Sphere(Vector3 center, float radius) { Center = center; Radius = radius; }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public static Sphere Create(Vector3 center, float radius) => new Sphere(center, radius);
@@ -1131,13 +1131,13 @@ namespace Vim.Math3d
     }
     [StructLayout(LayoutKind.Sequential, Pack=4)]
     [DataContract]
-    public readonly partial struct DSphere 
+    public partial struct DSphere
         : IEquatable< DSphere >
     {
         [DataMember]
-        public readonly DVector3 Center;
+        public DVector3 Center;
         [DataMember]
-        public readonly double Radius;
+        public double Radius;
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public DSphere((DVector3 center, double radius) tuple) : this(tuple.center, tuple.radius) { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public DSphere(DVector3 center, double radius) { Center = center; Radius = radius; }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public static DSphere Create(DVector3 center, double radius) => new DSphere(center, radius);
@@ -1161,13 +1161,13 @@ namespace Vim.Math3d
     }
     [StructLayout(LayoutKind.Sequential, Pack=4)]
     [DataContract]
-    public readonly partial struct Transform 
+    public partial struct Transform
         : IEquatable< Transform >
     {
         [DataMember]
-        public readonly Vector3 Position;
+        public Vector3 Position;
         [DataMember]
-        public readonly Quaternion Orientation;
+        public Quaternion Orientation;
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public Transform((Vector3 position, Quaternion orientation) tuple) : this(tuple.position, tuple.orientation) { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public Transform(Vector3 position, Quaternion orientation) { Position = position; Orientation = orientation; }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public static Transform Create(Vector3 position, Quaternion orientation) => new Transform(position, orientation);
@@ -1191,13 +1191,13 @@ namespace Vim.Math3d
     }
     [StructLayout(LayoutKind.Sequential, Pack=4)]
     [DataContract]
-    public readonly partial struct Line 
+    public partial struct Line
         : IEquatable< Line >
     {
         [DataMember]
-        public readonly Vector3 A;
+        public Vector3 A;
         [DataMember]
-        public readonly Vector3 B;
+        public Vector3 B;
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public Line((Vector3 a, Vector3 b) tuple) : this(tuple.a, tuple.b) { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public Line(Vector3 a, Vector3 b) { A = a; B = b; }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public static Line Create(Vector3 a, Vector3 b) => new Line(a, b);
@@ -1221,13 +1221,13 @@ namespace Vim.Math3d
     }
     [StructLayout(LayoutKind.Sequential, Pack=4)]
     [DataContract]
-    public readonly partial struct Line2D 
+    public partial struct Line2D
         : IEquatable< Line2D >
     {
         [DataMember]
-        public readonly Vector2 A;
+        public Vector2 A;
         [DataMember]
-        public readonly Vector2 B;
+        public Vector2 B;
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public Line2D((Vector2 a, Vector2 b) tuple) : this(tuple.a, tuple.b) { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public Line2D(Vector2 a, Vector2 b) { A = a; B = b; }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public static Line2D Create(Vector2 a, Vector2 b) => new Line2D(a, b);
@@ -1251,15 +1251,15 @@ namespace Vim.Math3d
     }
     [StructLayout(LayoutKind.Sequential, Pack=4)]
     [DataContract]
-    public readonly partial struct Triangle 
+    public partial struct Triangle
         : IEquatable< Triangle >
     {
         [DataMember]
-        public readonly Vector3 A;
+        public Vector3 A;
         [DataMember]
-        public readonly Vector3 B;
+        public Vector3 B;
         [DataMember]
-        public readonly Vector3 C;
+        public Vector3 C;
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public Triangle((Vector3 a, Vector3 b, Vector3 c) tuple) : this(tuple.a, tuple.b, tuple.c) { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public Triangle(Vector3 a, Vector3 b, Vector3 c) { A = a; B = b; C = c; }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public static Triangle Create(Vector3 a, Vector3 b, Vector3 c) => new Triangle(a, b, c);
@@ -1284,15 +1284,15 @@ namespace Vim.Math3d
     }
     [StructLayout(LayoutKind.Sequential, Pack=4)]
     [DataContract]
-    public readonly partial struct Triangle2D 
+    public partial struct Triangle2D
         : IEquatable< Triangle2D >
     {
         [DataMember]
-        public readonly Vector2 A;
+        public Vector2 A;
         [DataMember]
-        public readonly Vector2 B;
+        public Vector2 B;
         [DataMember]
-        public readonly Vector2 C;
+        public Vector2 C;
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public Triangle2D((Vector2 a, Vector2 b, Vector2 c) tuple) : this(tuple.a, tuple.b, tuple.c) { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public Triangle2D(Vector2 a, Vector2 b, Vector2 c) { A = a; B = b; C = c; }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public static Triangle2D Create(Vector2 a, Vector2 b, Vector2 c) => new Triangle2D(a, b, c);
@@ -1317,17 +1317,17 @@ namespace Vim.Math3d
     }
     [StructLayout(LayoutKind.Sequential, Pack=4)]
     [DataContract]
-    public readonly partial struct Quad 
+    public partial struct Quad
         : IEquatable< Quad >
     {
         [DataMember]
-        public readonly Vector3 A;
+        public Vector3 A;
         [DataMember]
-        public readonly Vector3 B;
+        public Vector3 B;
         [DataMember]
-        public readonly Vector3 C;
+        public Vector3 C;
         [DataMember]
-        public readonly Vector3 D;
+        public Vector3 D;
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public Quad((Vector3 a, Vector3 b, Vector3 c, Vector3 d) tuple) : this(tuple.a, tuple.b, tuple.c, tuple.d) { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public Quad(Vector3 a, Vector3 b, Vector3 c, Vector3 d) { A = a; B = b; C = c; D = d; }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public static Quad Create(Vector3 a, Vector3 b, Vector3 c, Vector3 d) => new Quad(a, b, c, d);
@@ -1353,17 +1353,17 @@ namespace Vim.Math3d
     }
     [StructLayout(LayoutKind.Sequential, Pack=4)]
     [DataContract]
-    public readonly partial struct Quad2D 
+    public partial struct Quad2D
         : IEquatable< Quad2D >
     {
         [DataMember]
-        public readonly Vector2 A;
+        public Vector2 A;
         [DataMember]
-        public readonly Vector2 B;
+        public Vector2 B;
         [DataMember]
-        public readonly Vector2 C;
+        public Vector2 C;
         [DataMember]
-        public readonly Vector2 D;
+        public Vector2 D;
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public Quad2D((Vector2 a, Vector2 b, Vector2 c, Vector2 d) tuple) : this(tuple.a, tuple.b, tuple.c, tuple.d) { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public Quad2D(Vector2 a, Vector2 b, Vector2 c, Vector2 d) { A = a; B = b; C = c; D = d; }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public static Quad2D Create(Vector2 a, Vector2 b, Vector2 c, Vector2 d) => new Quad2D(a, b, c, d);
@@ -1389,14 +1389,14 @@ namespace Vim.Math3d
     }
     [StructLayout(LayoutKind.Sequential, Pack=4)]
     [DataContract]
-    public readonly partial struct Int2 
+    public partial struct Int2
         : IEquatable< Int2 >
         , IComparable< Int2 >
     {
         [DataMember]
-        public readonly int X;
+        public int X;
         [DataMember]
-        public readonly int Y;
+        public int Y;
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public Int2((int x, int y) tuple) : this(tuple.x, tuple.y) { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public Int2(int x, int y) { X = x; Y = y; }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public static Int2 Create(int x, int y) => new Int2(x, y);
@@ -1457,16 +1457,16 @@ namespace Vim.Math3d
     }
     [StructLayout(LayoutKind.Sequential, Pack=4)]
     [DataContract]
-    public readonly partial struct Int3 
+    public partial struct Int3
         : IEquatable< Int3 >
         , IComparable< Int3 >
     {
         [DataMember]
-        public readonly int X;
+        public int X;
         [DataMember]
-        public readonly int Y;
+        public int Y;
         [DataMember]
-        public readonly int Z;
+        public int Z;
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public Int3((int x, int y, int z) tuple) : this(tuple.x, tuple.y, tuple.z) { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public Int3(int x, int y, int z) { X = x; Y = y; Z = z; }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public static Int3 Create(int x, int y, int z) => new Int3(x, y, z);
@@ -1529,18 +1529,18 @@ namespace Vim.Math3d
     }
     [StructLayout(LayoutKind.Sequential, Pack=4)]
     [DataContract]
-    public readonly partial struct Int4 
+    public partial struct Int4
         : IEquatable< Int4 >
         , IComparable< Int4 >
     {
         [DataMember]
-        public readonly int X;
+        public int X;
         [DataMember]
-        public readonly int Y;
+        public int Y;
         [DataMember]
-        public readonly int Z;
+        public int Z;
         [DataMember]
-        public readonly int W;
+        public int W;
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public Int4((int x, int y, int z, int w) tuple) : this(tuple.x, tuple.y, tuple.z, tuple.w) { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public Int4(int x, int y, int z, int w) { X = x; Y = y; Z = z; W = w; }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public static Int4 Create(int x, int y, int z, int w) => new Int4(x, y, z, w);
@@ -1605,13 +1605,13 @@ namespace Vim.Math3d
     }
     [StructLayout(LayoutKind.Sequential, Pack=4)]
     [DataContract]
-    public readonly partial struct Byte2 
+    public partial struct Byte2
         : IEquatable< Byte2 >
     {
         [DataMember]
-        public readonly byte X;
+        public byte X;
         [DataMember]
-        public readonly byte Y;
+        public byte Y;
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public Byte2((byte x, byte y) tuple) : this(tuple.x, tuple.y) { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public Byte2(byte x, byte y) { X = x; Y = y; }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public static Byte2 Create(byte x, byte y) => new Byte2(x, y);
@@ -1634,15 +1634,15 @@ namespace Vim.Math3d
     }
     [StructLayout(LayoutKind.Sequential, Pack=4)]
     [DataContract]
-    public readonly partial struct Byte3 
+    public partial struct Byte3
         : IEquatable< Byte3 >
     {
         [DataMember]
-        public readonly byte X;
+        public byte X;
         [DataMember]
-        public readonly byte Y;
+        public byte Y;
         [DataMember]
-        public readonly byte Z;
+        public byte Z;
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public Byte3((byte x, byte y, byte z) tuple) : this(tuple.x, tuple.y, tuple.z) { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public Byte3(byte x, byte y, byte z) { X = x; Y = y; Z = z; }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public static Byte3 Create(byte x, byte y, byte z) => new Byte3(x, y, z);
@@ -1666,17 +1666,17 @@ namespace Vim.Math3d
     }
     [StructLayout(LayoutKind.Sequential, Pack=4)]
     [DataContract]
-    public readonly partial struct Byte4 
+    public partial struct Byte4
         : IEquatable< Byte4 >
     {
         [DataMember]
-        public readonly byte X;
+        public byte X;
         [DataMember]
-        public readonly byte Y;
+        public byte Y;
         [DataMember]
-        public readonly byte Z;
+        public byte Z;
         [DataMember]
-        public readonly byte W;
+        public byte W;
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public Byte4((byte x, byte y, byte z, byte w) tuple) : this(tuple.x, tuple.y, tuple.z, tuple.w) { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public Byte4(byte x, byte y, byte z, byte w) { X = x; Y = y; Z = z; W = w; }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public static Byte4 Create(byte x, byte y, byte z, byte w) => new Byte4(x, y, z, w);
@@ -1701,15 +1701,15 @@ namespace Vim.Math3d
     }
     [StructLayout(LayoutKind.Sequential, Pack=4)]
     [DataContract]
-    public readonly partial struct ColorRGB 
+    public partial struct ColorRGB
         : IEquatable< ColorRGB >
     {
         [DataMember]
-        public readonly byte R;
+        public byte R;
         [DataMember]
-        public readonly byte G;
+        public byte G;
         [DataMember]
-        public readonly byte B;
+        public byte B;
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public ColorRGB((byte r, byte g, byte b) tuple) : this(tuple.r, tuple.g, tuple.b) { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public ColorRGB(byte r, byte g, byte b) { R = r; G = g; B = b; }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public static ColorRGB Create(byte r, byte g, byte b) => new ColorRGB(r, g, b);
@@ -1733,17 +1733,17 @@ namespace Vim.Math3d
     }
     [StructLayout(LayoutKind.Sequential, Pack=4)]
     [DataContract]
-    public readonly partial struct ColorRGBA 
+    public partial struct ColorRGBA
         : IEquatable< ColorRGBA >
     {
         [DataMember]
-        public readonly byte R;
+        public byte R;
         [DataMember]
-        public readonly byte G;
+        public byte G;
         [DataMember]
-        public readonly byte B;
+        public byte B;
         [DataMember]
-        public readonly byte A;
+        public byte A;
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public ColorRGBA((byte r, byte g, byte b, byte a) tuple) : this(tuple.r, tuple.g, tuple.b, tuple.a) { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public ColorRGBA(byte r, byte g, byte b, byte a) { R = r; G = g; B = b; A = a; }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public static ColorRGBA Create(byte r, byte g, byte b, byte a) => new ColorRGBA(r, g, b, a);
@@ -1768,17 +1768,17 @@ namespace Vim.Math3d
     }
     [StructLayout(LayoutKind.Sequential, Pack=4)]
     [DataContract]
-    public readonly partial struct ColorHDR 
+    public partial struct ColorHDR
         : IEquatable< ColorHDR >
     {
         [DataMember]
-        public readonly float R;
+        public float R;
         [DataMember]
-        public readonly float G;
+        public float G;
         [DataMember]
-        public readonly float B;
+        public float B;
         [DataMember]
-        public readonly float A;
+        public float A;
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public ColorHDR((float r, float g, float b, float a) tuple) : this(tuple.r, tuple.g, tuple.b, tuple.a) { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public ColorHDR(float r, float g, float b, float a) { R = r; G = g; B = b; A = a; }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public static ColorHDR Create(float r, float g, float b, float a) => new ColorHDR(r, g, b, a);
@@ -1804,15 +1804,15 @@ namespace Vim.Math3d
     }
     [StructLayout(LayoutKind.Sequential, Pack=4)]
     [DataContract]
-    public readonly partial struct SphericalCoordinate 
+    public partial struct SphericalCoordinate
         : IEquatable< SphericalCoordinate >
     {
         [DataMember]
-        public readonly double Radius;
+        public double Radius;
         [DataMember]
-        public readonly double Azimuth;
+        public double Azimuth;
         [DataMember]
-        public readonly double Inclination;
+        public double Inclination;
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public SphericalCoordinate((double radius, double azimuth, double inclination) tuple) : this(tuple.radius, tuple.azimuth, tuple.inclination) { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public SphericalCoordinate(double radius, double azimuth, double inclination) { Radius = radius; Azimuth = azimuth; Inclination = inclination; }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public static SphericalCoordinate Create(double radius, double azimuth, double inclination) => new SphericalCoordinate(radius, azimuth, inclination);
@@ -1837,13 +1837,13 @@ namespace Vim.Math3d
     }
     [StructLayout(LayoutKind.Sequential, Pack=4)]
     [DataContract]
-    public readonly partial struct PolarCoordinate 
+    public partial struct PolarCoordinate
         : IEquatable< PolarCoordinate >
     {
         [DataMember]
-        public readonly double Radius;
+        public double Radius;
         [DataMember]
-        public readonly double Azimuth;
+        public double Azimuth;
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public PolarCoordinate((double radius, double azimuth) tuple) : this(tuple.radius, tuple.azimuth) { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public PolarCoordinate(double radius, double azimuth) { Radius = radius; Azimuth = azimuth; }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public static PolarCoordinate Create(double radius, double azimuth) => new PolarCoordinate(radius, azimuth);
@@ -1867,13 +1867,13 @@ namespace Vim.Math3d
     }
     [StructLayout(LayoutKind.Sequential, Pack=4)]
     [DataContract]
-    public readonly partial struct LogPolarCoordinate 
+    public partial struct LogPolarCoordinate
         : IEquatable< LogPolarCoordinate >
     {
         [DataMember]
-        public readonly double Rho;
+        public double Rho;
         [DataMember]
-        public readonly double Azimuth;
+        public double Azimuth;
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public LogPolarCoordinate((double rho, double azimuth) tuple) : this(tuple.rho, tuple.azimuth) { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public LogPolarCoordinate(double rho, double azimuth) { Rho = rho; Azimuth = azimuth; }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public static LogPolarCoordinate Create(double rho, double azimuth) => new LogPolarCoordinate(rho, azimuth);
@@ -1897,15 +1897,15 @@ namespace Vim.Math3d
     }
     [StructLayout(LayoutKind.Sequential, Pack=4)]
     [DataContract]
-    public readonly partial struct CylindricalCoordinate 
+    public partial struct CylindricalCoordinate
         : IEquatable< CylindricalCoordinate >
     {
         [DataMember]
-        public readonly double Radius;
+        public double Radius;
         [DataMember]
-        public readonly double Azimuth;
+        public double Azimuth;
         [DataMember]
-        public readonly double Height;
+        public double Height;
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public CylindricalCoordinate((double radius, double azimuth, double height) tuple) : this(tuple.radius, tuple.azimuth, tuple.height) { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public CylindricalCoordinate(double radius, double azimuth, double height) { Radius = radius; Azimuth = azimuth; Height = height; }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public static CylindricalCoordinate Create(double radius, double azimuth, double height) => new CylindricalCoordinate(radius, azimuth, height);
@@ -1930,14 +1930,14 @@ namespace Vim.Math3d
     }
     [StructLayout(LayoutKind.Sequential, Pack=4)]
     [DataContract]
-    public readonly partial struct HorizontalCoordinate 
+    public partial struct HorizontalCoordinate
         : IEquatable< HorizontalCoordinate >
         , IComparable< HorizontalCoordinate >
     {
         [DataMember]
-        public readonly double Azimuth;
+        public double Azimuth;
         [DataMember]
-        public readonly double Inclination;
+        public double Inclination;
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public HorizontalCoordinate((double azimuth, double inclination) tuple) : this(tuple.azimuth, tuple.inclination) { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public HorizontalCoordinate(double azimuth, double inclination) { Azimuth = azimuth; Inclination = inclination; }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public static HorizontalCoordinate Create(double azimuth, double inclination) => new HorizontalCoordinate(azimuth, inclination);
@@ -1999,14 +1999,14 @@ namespace Vim.Math3d
     }
     [StructLayout(LayoutKind.Sequential, Pack=4)]
     [DataContract]
-    public readonly partial struct GeoCoordinate 
+    public partial struct GeoCoordinate
         : IEquatable< GeoCoordinate >
         , IComparable< GeoCoordinate >
     {
         [DataMember]
-        public readonly double Latitude;
+        public double Latitude;
         [DataMember]
-        public readonly double Longitude;
+        public double Longitude;
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public GeoCoordinate((double latitude, double longitude) tuple) : this(tuple.latitude, tuple.longitude) { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public GeoCoordinate(double latitude, double longitude) { Latitude = latitude; Longitude = longitude; }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public static GeoCoordinate Create(double latitude, double longitude) => new GeoCoordinate(latitude, longitude);
@@ -2068,13 +2068,13 @@ namespace Vim.Math3d
     }
     [StructLayout(LayoutKind.Sequential, Pack=4)]
     [DataContract]
-    public readonly partial struct AxisAngle 
+    public partial struct AxisAngle
         : IEquatable< AxisAngle >
     {
         [DataMember]
-        public readonly DVector3 Axis;
+        public DVector3 Axis;
         [DataMember]
-        public readonly double Angle;
+        public double Angle;
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public AxisAngle((DVector3 axis, double angle) tuple) : this(tuple.axis, tuple.angle) { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public AxisAngle(DVector3 axis, double angle) { Axis = axis; Angle = angle; }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public static AxisAngle Create(DVector3 axis, double angle) => new AxisAngle(axis, angle);
@@ -2098,16 +2098,16 @@ namespace Vim.Math3d
     }
     [StructLayout(LayoutKind.Sequential, Pack=4)]
     [DataContract]
-    public readonly partial struct Euler 
+    public partial struct Euler
         : IEquatable< Euler >
         , IComparable< Euler >
     {
         [DataMember]
-        public readonly float Yaw;
+        public float Yaw;
         [DataMember]
-        public readonly float Pitch;
+        public float Pitch;
         [DataMember]
-        public readonly float Roll;
+        public float Roll;
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public Euler((float yaw, float pitch, float roll) tuple) : this(tuple.yaw, tuple.pitch, tuple.roll) { }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public Euler(float yaw, float pitch, float roll) { Yaw = yaw; Pitch = pitch; Roll = roll; }
         [MethodImpl(MethodImplOptions.AggressiveInlining)] public static Euler Create(float yaw, float pitch, float roll) => new Euler(yaw, pitch, roll);
