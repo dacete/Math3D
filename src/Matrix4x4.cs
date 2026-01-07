@@ -2008,7 +2008,7 @@ namespace Vim.Math3d
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static Matrix4x4 CreateTRS(Vector3 translation, Quaternion rotation, Vector3 scale)
-            => CreateTranslation(translation) * CreateRotation(rotation) * CreateScale(scale);
+            => CreateScale(scale) * CreateRotation(rotation) * CreateTranslation(translation);
 
         /// <summary>
         /// Get's the scale factor of each axis.  This implementation extracts the scale exclusively,
